@@ -65,7 +65,10 @@
             <h1 class="main-banner-description">
               Efektywne rozwiązania dla Waszego biznesu
             </h1>
-            <button class="button-main" type="button">Zamów usługę</button>
+
+            <button class="button-main" type="button" data-modal-open>
+              Zamów usługę
+            </button>
           </div>
         </div>
       </div>
@@ -455,6 +458,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal-box">
+        <button class="button-main-open" data-modal-close type="button">
+          <svg class="icon icon-modal-close">
+            <use xlink:href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
